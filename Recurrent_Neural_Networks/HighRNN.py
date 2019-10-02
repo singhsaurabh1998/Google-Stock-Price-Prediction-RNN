@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 train_dataset = pd.read_csv("Google_Stock_Price_Train.csv")
-training_set = train_dataset.iloc[:,2:3].values # high stock prices
+training_set = train_dataset.iloc[:,2:3].values # high stock pricess
 
 from sklearn.preprocessing import MinMaxScaler
 sc = MinMaxScaler(feature_range=(0,1))
